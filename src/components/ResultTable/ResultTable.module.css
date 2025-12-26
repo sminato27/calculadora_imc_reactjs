@@ -1,0 +1,59 @@
+.wrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+.resultBox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem 1rem;
+  padding: 1rem;
+  border: 1px solid #3a3a3a;
+  border-radius: 12px;
+}
+
+.resultLabel {
+  opacity: 0.8;
+  margin-right: 0.5rem;
+}
+
+.resultValue {
+  font-weight: 700;
+}
+
+.resultBadge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.table thead th {
+  background: #1a1a1a;
+}
+
+.active td {
+  background: rgba(100, 108, 255, 0.12);
+}
+
+@media (prefers-color-scheme: light) {
+  .resultBox { border-color: #e3e3e3; }
+  .resultBadge { background: #f6f6f6; border-color: #e3e3e3; }
+  .table th, .table td { border-bottom-color: #eee; }
+  .table thead th { background: #fafafa; }
+}
